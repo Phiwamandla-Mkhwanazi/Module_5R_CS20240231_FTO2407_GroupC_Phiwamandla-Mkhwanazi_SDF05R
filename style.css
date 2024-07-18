@@ -61,123 +61,62 @@ p {
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
 
-/*=============Button 1===============*/
+/*=============Buttons===============*/
 .btn-1
 {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 30%;
-    border-radius: 100px;
-    transition: all 1s ease;
-    animation: rotateClockWise 2s infinite linear;
+    animation: rotateClockWise 3s infinite linear;
     background-color: transparent;
     
 }
 
-/*btn-1 Pseudo Class Focus -  Slide the element from left or right and vice versa*/
-.btn-1:focus
-{
-    background-color: var(--btn2-color);
-    animation: SlideButton 4s infinite;
-
-}
-
-/*btn-1 Pseudo Class Hover - Rotate the element anti-clockwise*/
-.btn-1:hover
-{
-    animation: rotateAntiClockWise 5s infinite linear;
-
-} 
-
-/*=============Button 2===============*/
 .btn-2
 
 {
     background-color: var(--btn2-color);
-    border-radius: 100px;
     width: 8vmin;
     animation: SlideButton 2s infinite;
 
 
 }
 
-
-/*btn-2 Pseudo Class Focus - Describe effect*/
-.btn-2:focus
-{
-    background-color: var(--btn3-color);
-    animation: rotateAntiClockWise 2s infinite linear;
-}
-
-/*btn-2 Pseudo Class - Describe effect*/
-.btn-2:hover
-{
-
-
-} 
-
-/*btn-2 Pseudo Element - Describe effect*/
-.btn-2::after
-{
-
-
-
-}
-
-/*btn-2 Pseudo Element - Describe effect*/
-.btn-2::before
-{
-
-
-
-
-}
-
-
-/*=============Button 3===============*/
 .btn-3
 {
     background-color: transparent;
+    margin-left: 59%;
+    animation: rotateClockWise 3s infinite linear;
+
+}
+
+.btn-1, .btn-2, .btn-3
+{
     border-radius: 100px;
-    margin-left: 60%;
-    animation: rotateClockWise 2s infinite linear;
-
-}
-
-/*btn-1 Pseudo Class - Describe effect*/
-.btn-3:focus
-{
-    background-color: var(--btn1-color);
-}
-
-/*btn-1 Pseudo Class - Describe effect*/
-.btn-3:hover
-{
-
 
 } 
 
-/*btn-1 Pseudo Element - Describe effect*/
-.btn-3::after
+
+/*Buttons: Pseudo Classes Focus -  Slide the element from left or right and vice versa*/
+.btn-1:focus, .btn-3:focus
 {
-
-
+    background-color: var(--btn2-color);
+    animation: SlideButton 4s infinite;
 
 }
 
-/*btn-1 Pseudo Element - Describe effect*/
-.btn-3::before
+/*Button: Pseudo Classes Hover - Rotate the element anti-clockwise*/
+.btn-1:hover, .btn-2:focus, .btn-3:hover
 {
+    animation: rotateAntiClockWise 5s infinite linear;
+    background-color: var(--btn1-color);
 
-
-
-
-}
+} 
 
 
 /*=============Keyframes================*/
 
 /*Keyframe 1*/
-/*Belongs to btn 1 : Rotation  - Clockwise*/
+/*Rotation  - Clockwise*/
 @keyframes rotateClockWise 
 {
     from
@@ -191,7 +130,7 @@ p {
 }
 
 /*Keyframe 2*/
-/*Belongs to btn 1 : Rotation - Anti Clockwise*/
+/*Rotation - Anti Clockwise*/
 @keyframes rotateAntiClockWise 
 {
     from
@@ -204,23 +143,9 @@ p {
     }
 }
 
+
 /*Keyframe 3*/
-/*Belongs to btn 1 : cover the button*/
-@keyframes cover 
-{
-    from
-    {
-        left: -75%; bottom: -75%;
-    }
-    to
-    {
-        left: -75%; bottom: -75%;
-    }
-
-}
-
-/*Keyframe 4*/
-/*Belongs to btn 2 : slide side ways*/
+/*Slide Horizontally - left,right,left*/
 @keyframes SlideButton 
 {
     0% {
@@ -233,22 +158,3 @@ p {
         transform: translateX(-100%);
       }
 }
-
-/*Keyframe 4*/
-/*Belongs to btn : */
-@keyframes loader 
-{
-    100%
-    {
-        tranform: rotate(1turn);
-    }
-}
-
-/*Keyframe 5*/
-/*Belongs to btn : */
-@keyframes identifier 
-{
-    
-}
-
-
