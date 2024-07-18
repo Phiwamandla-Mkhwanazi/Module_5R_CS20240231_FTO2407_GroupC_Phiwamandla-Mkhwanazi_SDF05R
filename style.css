@@ -78,18 +78,21 @@ p {
 {
     margin-top: 15%;
     background-color: var(--btn1-color);
+    border-radius: 100px;
+    transition: all 1s ease;
+    animation: rotateClockWise 2s infinite linear;
 }
 
 /*btn-1 Pseudo Class - Describe effect*/
 .btn-1:focus
 {
-    background-color: var(--btn1-color);
+    background-color: var(--btn2-color);
 }
 
 /*btn-1 Pseudo Class - Describe effect*/
 .btn-1:hover
 {
-
+    animation: rotateAntiClockWise 2s infinite linear;
 
 } 
 
@@ -121,6 +124,7 @@ p {
 
 
 }
+
 
 /*btn-2 Pseudo Class - Describe effect*/
 .btn-2:focus
@@ -195,16 +199,30 @@ p {
 
 /*Keyframe 1*/
 /*Belongs to btn : */
-@keyframes identifier 
+@keyframes rotateClockWise 
 {
-    
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
 }
 
 /*Keyframe 2*/
 /*Belongs to btn : */
-@keyframes identifier 
+@keyframes rotateAntiClockWise 
 {
-    
+    from
+    {
+        transform: rotate(360deg);
+    }
+    to
+    {
+        transform: rotate(0deg);
+    }
 }
 
 /*Keyframe 3*/
