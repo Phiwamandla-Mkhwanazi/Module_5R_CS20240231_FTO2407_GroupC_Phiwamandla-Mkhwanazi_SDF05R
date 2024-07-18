@@ -1,3 +1,12 @@
+/*Button Variables*/
+:root
+{
+     /*Temp Colours*/
+    --btn1-color: red;
+    --btn2-color: blue;
+    --btn3-color: green;
+}
+
 body {
     background: #eeefed;
 }
@@ -52,3 +61,165 @@ p {
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+
+/*=============Button 1===============*/
+.btn-1
+{
+    background-color: var(--btn1-color);
+}
+
+/*btn-1 Pseudo Class - Describe effect*/
+.btn-1:focus
+{
+    background-color: var(--btn1-color);
+}
+
+/*btn-1 Pseudo Class - Describe effect*/
+.btn-1:hover
+{
+
+
+} 
+
+/*btn-1 Pseudo Element - Describe effect*/
+.btn-1::after
+{
+
+
+
+}
+
+/*btn-1 Pseudo Element - Describe effect*/
+.btn-1::before
+{
+
+
+
+
+}
+
+
+
+
+/*=============Button 2===============*/
+.btn-2
+
+{
+    background-color: var(--btn2-color);
+
+
+}
+
+/*btn-2 Pseudo Class - Describe effect*/
+.btn-2:focus
+{
+    background-color: var(--btn1-color);
+}
+
+/*btn-2 Pseudo Class - Describe effect*/
+.btn-2:hover
+{
+
+
+} 
+
+/*btn-2 Pseudo Element - Describe effect*/
+.btn-2::after
+{
+
+
+
+}
+
+/*btn-2 Pseudo Element - Describe effect*/
+.btn-2::before
+{
+
+
+
+
+}
+
+
+/*=============Button 3===============*/
+.btn-3
+{
+    background-color: var(--btn3-color);
+
+}
+
+/*btn-1 Pseudo Class - Describe effect*/
+.btn-3:focus
+{
+    background-color: var(--btn1-color);
+}
+
+/*btn-1 Pseudo Class - Describe effect*/
+.btn-3:hover
+{
+
+
+} 
+
+/*btn-1 Pseudo Element - Describe effect*/
+.btn-3::after
+{
+
+
+
+}
+
+/*btn-1 Pseudo Element - Describe effect*/
+.btn-3::before
+{
+
+
+
+
+}
+
+
+/*=============Keyframes================*/
+
+/*Keyframe 1*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
+/*Keyframe 2*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
+/*Keyframe 3*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
+/*Keyframe 4*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
+/*Keyframe 4*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
+/*Keyframe 5*/
+/*Belongs to btn : */
+@keyframes identifier 
+{
+    
+}
+
