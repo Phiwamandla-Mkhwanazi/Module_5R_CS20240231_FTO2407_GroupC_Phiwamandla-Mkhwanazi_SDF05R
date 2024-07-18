@@ -1,9 +1,9 @@
 /*Button Variables*/
 :root
 {
-    --btn1-color: red;
-    --btn2-color: blue;
-    --btn3-color: green;
+    --btn1-color: rgb(185, 174, 21);
+    --btn2-color: grey;
+    --btn3-color: rgb(27, 83, 25);
 }
 
 body {
@@ -66,32 +66,28 @@ p {
 {
     margin-top: 10%;
     margin-left: 30%;
-    animation: rotateClockWise 3s infinite linear;
-    background-color: transparent;
-    
+    animation: rotateClockWise 3s infinite linear;    
 }
 
 .btn-2
 
 {
-    background-color: var(--btn2-color);
     width: 8vmin;
     animation: SlideButton 2s infinite;
-
-
 }
 
 .btn-3
 {
-    background-color: transparent;
     margin-left: 59%;
     animation: rotateClockWise 3s infinite linear;
-
 }
 
 .btn-1, .btn-2, .btn-3
 {
     border-radius: 100px;
+    border: 0px;
+    box-shadow: 10px 8px var(--btn3-color);
+    background-color: var(--btn2-color);
 
 } 
 
@@ -99,8 +95,10 @@ p {
 /*Buttons: Pseudo Classes Focus -  Slide the element from left or right and vice versa*/
 .btn-1:focus, .btn-3:focus
 {
-    background-color: var(--btn2-color);
+    background-color: var(--btn1-color);
+    box-shadow: 10px 8px var(--btn2-color);
     animation: SlideButton 4s infinite;
+
 
 }
 
@@ -109,6 +107,7 @@ p {
 {
     animation: rotateAntiClockWise 5s infinite linear;
     background-color: var(--btn1-color);
+    box-shadow: 10px 8px var(--btn2-color);
 
 } 
 
