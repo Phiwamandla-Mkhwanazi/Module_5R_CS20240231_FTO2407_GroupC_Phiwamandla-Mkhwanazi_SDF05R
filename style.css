@@ -61,6 +61,18 @@ p {
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
 
+/*===========Custom Button=============*/
+/*Pseudo classes for the same effect on all buttons when you hover over the element*/
+.custom-btn:hover
+{
+    opacity: 1;
+    border: 10px solid;
+    padding: 0;
+    font:bold;
+}
+
+
+
 /*=============Button 1===============*/
 .btn-1
 {
